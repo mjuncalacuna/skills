@@ -1,0 +1,27 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Agent",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\" node \"${CLAUDE_PLUGIN_ROOT}/hooks/verify.mjs\" agent",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\" node \"${CLAUDE_PLUGIN_ROOT}/hooks/verify.mjs\" report",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

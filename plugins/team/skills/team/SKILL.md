@@ -57,6 +57,8 @@ Launch independent parts in parallel, in a single message; dependent parts in or
 
 A worker's summary is a claim, not proof. Before moving on, check the artifact: `git status --short` and `git diff --stat` (new files only show in the first), a grep for the change, or the tests. Workers sometimes report fixes they never applied, and a few tool calls in a few seconds for a multi-file change is a warning sign.
 
+The plugin's hook does the first check for you: when a worker comes back, it adds `git status --short` and `git diff HEAD --stat` to your context, or tells you the repo has no changes at all. Compare that with what the worker says. Workers launched as Orca agents don't trigger it, so check those yourself.
+
 If the result doesn't match the report, send it back once with what you found. If it fails again, do it yourself only when it's small, and say so.
 
 ## 4. Review

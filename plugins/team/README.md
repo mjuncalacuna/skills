@@ -36,6 +36,20 @@ Without the plugin system: copy `skills/team/` to `~/.claude/skills/team/` and `
 - `agents/reviewer.md`: Opus, medium effort, read-only by instruction (Read, Grep, Glob and Bash), real findings only.
 - `skills/team/providers.md`: Codex (OpenAI) as a worker, and Codex or Grok as a second reviewer through their CLIs.
 - `skills/team/orca.md`: in an [Orca](https://github.com/stablyai/orca) terminal, workers and reviewer run as Orca agents, each with its own row in the sidebar.
+- `hooks/verify.mjs`: when a worker reports back, it hands the planner `git status --short` and `git diff HEAD --stat`, so checking the report doesn't depend on the model remembering to. If the repo has no changes, it says so.
+- `scripts/usage.mjs`: how many tokens each role used in a session, by model, read from Claude Code's transcripts.
+
+## Measure a session
+
+From the project folder, after a run:
+
+```
+node ~/.claude/plugins/marketplaces/skills/plugins/team/scripts/usage.mjs
+```
+
+It takes the latest session of that folder (or a session id) and prints a table of planner, workers and reviewer by model: responses, input, cache read, cache write and output tokens. Cache reads are usually most of the volume, so don't judge a setup by output tokens alone.
+
+Roles come from the agent type: `team:worker` and `worker` count as workers, `team:reviewer` and `reviewer` as reviewers, and anything else (for example general-purpose subagents) shows under its own type. If the project folder isn't found, pass it with `--project`.
 
 ## Customise
 

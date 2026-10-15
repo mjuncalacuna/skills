@@ -1,0 +1,10 @@
+{"type":"assistant","message":{"id":"p1","model":"claude-opus-5-5","role":"assistant","content":[{"type":"text","text":"x"}],"usage":{"input_tokens":10,"cache_read_input_tokens":100,"cache_creation_input_tokens":20,"output_tokens":100}}}
+{"type":"assistant","message":{"id":"p2","model":"claude-opus-5-5","role":"assistant","content":[{"type":"text","text":"x"}],"usage":{"input_tokens":5,"cache_read_input_tokens":50,"cache_creation_input_tokens":0,"output_tokens":16}}}
+{"type":"assistant","message":{"id":"p2","model":"claude-opus-5-5","role":"assistant","content":[{"type":"text","text":"x"}],"usage":{"input_tokens":5,"cache_read_input_tokens":50,"cache_creation_input_tokens":0,"output_tokens":300}}}
+{"type":"assistant","message":{"id":"m_tu_w","model":"claude-opus-5-5","content":[{"type":"tool_use","id":"tu_w","name":"Agent","input":{"subagent_type":"team:worker","prompt":"p"}}],"usage":{"input_tokens":1,"cache_read_input_tokens":0,"cache_creation_input_tokens":0,"output_tokens":5}}}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"tu_w","content":"ok"}]},"toolUseResult":{"status":"async_launched","agentId":"w1"}}
+{"type":"assistant","message":{"id":"m_tu_g","model":"claude-opus-5-5","content":[{"type":"tool_use","id":"tu_g","name":"Agent","input":{"subagent_type":"general-purpose","prompt":"p"}}],"usage":{"input_tokens":1,"cache_read_input_tokens":0,"cache_creation_input_tokens":0,"output_tokens":5}}}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"tu_g","content":"ok"}]},"toolUseResult":{"status":"async_launched","agentId":"g1"}}
+{this is not json
+{"type":"assistant","message":{"id":"s1","model":"<synthetic>","usage":{"input_tokens":0,"output_tokens":0}}}
+{"type":"system","content":"noise"}

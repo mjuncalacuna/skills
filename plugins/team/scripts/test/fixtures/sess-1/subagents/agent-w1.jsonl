@@ -1,0 +1,4 @@
+{"type":"assistant","message":{"id":"w_a","model":"claude-sonnet-5-5","role":"assistant","content":[{"type":"text","text":"x"}],"usage":{"input_tokens":10,"cache_read_input_tokens":100,"cache_creation_input_tokens":20,"output_tokens":50}},"agentId":"w1"}
+{"type":"assistant","message":{"id":"w_a","model":"claude-sonnet-5-5","role":"assistant","content":[{"type":"text","text":"x"}],"usage":{"input_tokens":10,"cache_read_input_tokens":100,"cache_creation_input_tokens":20,"output_tokens":50}},"agentId":"w1"}
+{"type":"assistant","message":{"id":"w_b","model":"claude-sonnet-5-5","role":"assistant","content":[{"type":"text","text":"x"}],"usage":{"input_tokens":10,"cache_read_input_tokens":100,"cache_creation_input_tokens":20,"output_tokens":150}},"agentId":"w1"}
+garbage
