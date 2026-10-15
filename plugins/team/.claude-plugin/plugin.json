@@ -4,8 +4,8 @@
   "author": {
     "name": "Manuel Juncal"
   },
-  "homepage": "https://github.com/mjuncalacuna/agent-team",
-  "repository": "https://github.com/mjuncalacuna/agent-team",
+  "homepage": "https://github.com/mjuncalacuna/skills/tree/main/plugins/team",
+  "repository": "https://github.com/mjuncalacuna/skills",
   "license": "MIT",
   "keywords": ["subagents", "orchestration", "code-review", "multi-model"]
 }

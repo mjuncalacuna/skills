@@ -1,6 +1,6 @@
 {
-  "name": "agent-team",
-  "description": "A planner, parallel workers and a reviewer for Claude Code",
+  "name": "skills",
+  "description": "Claude Code skills by Manuel Juncal",
   "owner": {
     "name": "Manuel Juncal"
   },
