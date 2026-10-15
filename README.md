@@ -35,6 +35,7 @@ Without the plugin system: copy `plugins/team/skills/team/` to `~/.claude/skills
 - `agents/worker.md`: Sonnet, medium effort, stays inside the files it was given.
 - `agents/reviewer.md`: Opus, medium effort, read-only by instruction (Read, Grep, Glob and Bash), real findings only.
 - `skills/team/providers.md`: Codex (OpenAI) as a worker, and Codex or Grok as a second reviewer through their CLIs.
+- `skills/team/orca.md`: in an [Orca](https://github.com/stablyai/orca) terminal, workers and reviewer run as Orca agents, each with its own row in the sidebar.
 
 ## Customise
 

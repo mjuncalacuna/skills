@@ -19,6 +19,8 @@ Topology: 1 planner → up to 4 workers in parallel, one set of files each → y
 
 Use the agents that ship with this plugin (`team:worker` and `team:reviewer`, or `worker` and `reviewer` if they were copied into `~/.claude/agents/`). Their definitions already fix model, effort and tools. If they're missing, spawn general-purpose subagents and pass `model` on each call (and `effort`, if your Claude Code supports it per call).
 
+**In Orca:** if this session runs in an Orca terminal (`ORCA_PANE_KEY` is set), launch the workers and the reviewer as Orca workers instead, so each one shows up in Orca's sidebar. How: [orca.md](orca.md).
+
 ## 0. Decide whether you need a team
 
 - **Small** (one file, a few lines, a question): no team. Do it yourself and don't mention this skill. Splitting small work costs more than doing it.
