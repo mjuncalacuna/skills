@@ -1,0 +1,11 @@
+{
+  "name": "team",
+  "description": "Planner, parallel workers and a fresh-context reviewer for non-trivial tasks: Opus plans and reviews, Sonnet does the work",
+  "author": {
+    "name": "Manuel Juncal"
+  },
+  "homepage": "https://github.com/mjuncalacuna/agent-team",
+  "repository": "https://github.com/mjuncalacuna/agent-team",
+  "license": "MIT",
+  "keywords": ["subagents", "orchestration", "code-review", "multi-model"]
+}
